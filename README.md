@@ -2,9 +2,9 @@
 
 # Front-end coding test (Next.js | React)
 
-Our design team created a new design to show more about our company.
+Our design team created a new about page for our website.
 
-Here's' how the design looks like for desktop (files are stored in the `docs` folder)
+Here's how the design looks like for desktop (files are stored in the `docs` folder)
 
 Desktop
 
@@ -18,12 +18,12 @@ Desktop
 - The project is bootstraped using [Next.js](https://nextjs.org/).
 - Browser support is modern ever-green browsers.
 - Implement this project using React and Typescript.
-- Code Structure and reusability is important.
+- Code Structure and reusability are important.
 - Feel free to add libraries as you see fit.
-- *Justpoint in the news* must be a carousel/slider with API integration
-- Each carousel slide must have its proper image (check the `docs` folder)
-- The form must have validation with feedback to the user
-- Responsive layout
+- *Justpoint in the news* section must be a carousel/slider with API integration.
+- Each carousel slide must have its proper image (check the `docs` folder).
+- The form must have validation with feedback to the user.
+- Responsive layout.
 
 The data required to render the *"Justpoint in the news"* section is in this endpoint
 ```sh
@@ -32,8 +32,8 @@ https://634db1c6f5d2cc648eac9a19.mockapi.io/news
 
 ## Bonus Points
 
-- If you add the mobile menu hamburguer
-- If you add animations and transitions
-- Deploy to Vercel or another location of your choice and provide a preview link
+- If you add the mobile menu hamburguer.
+- If you add animations and transitions.
+- Deploy to Vercel or another location of your choice and provide a preview link.
 
 ---
