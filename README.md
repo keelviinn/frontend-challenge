@@ -1,4 +1,4 @@
-<img src="https://justpoint.com/images/full_logo_black.png" alt="alt text" width="100%" height="whatever">
+<img src="https://justpoint.com/images/full_logo_black.png" alt="alt text" height="whatever">
 
 # Front-end coding test (Next.js | React)
 
