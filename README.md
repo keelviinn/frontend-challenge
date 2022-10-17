@@ -1,1 +1,39 @@
-# frontend-challenge
+<img src="https://justpoint.com/images/full_logo_black.png" alt="alt text" width="100%" height="whatever">
+
+# Front-end coding test (Next.js | React)
+
+Our design team created a new design to show more about our company.
+
+Here's' how the design looks like for desktop (files are stored in the `docs` folder)
+
+Desktop
+
+![Prototype Desktop](https://github.com/Intrellit/frontend-challenge/blob/main/docs/figma-view.png?raw=true)
+
+
+
+## Requirements
+
+- Follow [this prototype](https://www.figma.com/file/6H8O9GmBetIwQpaMt6Vjpw/Frontend-Interview)
+- The project is bootstraped using [Next.js](https://nextjs.org/).
+- Browser support is modern ever-green browsers.
+- Implement this project using React and Typescript.
+- Code Structure and reusability is important.
+- Feel free to add libraries as you see fit.
+- *Justpoint in the news* must be a carousel/slider with API integration
+- Each carousel slide must have its proper image (check the `docs` folder)
+- The form must have validation with feedback to the user
+- Responsive layout
+
+The data required to render the *"Justpoint in the news"* section is in this endpoint
+```sh
+https://634db1c6f5d2cc648eac9a19.mockapi.io/news
+```
+
+## Bonus Points
+
+- If you add the mobile menu hamburguer
+- If you add animations and transitions
+- Deploy to Vercel or another location of your choice and provide a preview link
+
+---
