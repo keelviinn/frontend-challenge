@@ -1,6 +1,6 @@
 <img src="https://justpoint.com/images/full_logo_black.png" alt="alt text" height="whatever">
 
-# Front-end coding test (Next.js | React)
+# Front-end coding test (React)
 
 Our design team created a new about page for our website.
 
@@ -15,9 +15,8 @@ Desktop
 ## Requirements
 
 - Follow [this prototype](https://www.figma.com/file/6H8O9GmBetIwQpaMt6Vjpw/Frontend-Interview)
-- The project is bootstraped using [Next.js](https://nextjs.org/).
 - Browser support is modern ever-green browsers.
-- Implement this project using React and Typescript.
+- Implement this project using React.
 - Code Structure and reusability are important.
 - Feel free to add libraries as you see fit.
 - *Justpoint in the news* section must be a carousel/slider with API integration.
@@ -34,6 +33,7 @@ https://634db1c6f5d2cc648eac9a19.mockapi.io/news
 
 - If you add the mobile menu hamburguer.
 - If you add animations and transitions.
+- If you use Typescript.
 - Deploy to Vercel or another location of your choice and provide a preview link.
 
 ---
