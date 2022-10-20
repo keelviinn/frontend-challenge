@@ -32,10 +32,10 @@ export const Carousel = ({ news }: CarouselProps) => {
         <Slider {...settings}>
           {news.map(({ text, company }) => {
             return (
-              <S.CarouselCardsContainer>
+              <S.CarouselCardsContainer key={company}>
                 <S.CarouselCard>
                   <S.CarouselCardTitle>{text}</S.CarouselCardTitle>
-                  <S.CarouselCardImg src={imgs[NameFormat(company)]} />
+                  <S.CarouselCardImg src={imgs[NameFormat(company)]} alt={company} />
                 </S.CarouselCard>
               </S.CarouselCardsContainer>
             );

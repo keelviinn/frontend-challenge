@@ -29,7 +29,7 @@ export const Footer = () => {
       </S.FooterContent>
       <S.FooterContent variant="secondary">
         {footerInfos.map(({ title, description }) => (
-          <S.FooterContentInfo>
+          <S.FooterContentInfo key={title}>
             <h3>{title}</h3>
             <Button variant="secundary-bordered">{description}</Button>
           </S.FooterContentInfo>

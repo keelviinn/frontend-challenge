@@ -17,9 +17,7 @@ export function About() {
 
   useEffect(() => {
     api.get('news').then((response) => setNews(response.data));
-  }, [])
-
-  console.log(news);
+  }, []);
 
   return (
     <S.AboutPage>
