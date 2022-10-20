@@ -6,10 +6,31 @@ export const HeaderMenuWrapper = styled.header`
   align-items: center;
   padding: 30px 40px;
 
+  .MobileNavigation {
+      display: none;
+    }
+
   @media (max-width: 768px) {
     padding: 20px 30px;
     flex-direction: column;
+
+    .Navigation {
+      display: none;
+    }
+
+    .MobileNavigation {
+      display: flex;
+      align-items: center;
+    }
+  
+    .MobileNavigation .Hamburger {
+      z-index: 10;
+      position: absolute;
+      right: 5%;
+      cursor: pointer;
+    }
   }
+
 `;
 
 export const HeaderMenu = styled.ul`
@@ -21,10 +42,25 @@ export const HeaderMenu = styled.ul`
 
   @media (max-width: 768px) {
     margin-top: 20px;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    top: 0;
+    padding: 5rem 0;
+    align-items: center;
+    background-color: #181818;
   }
 
   li {
     margin: 0 10px;
+
+    @media (max-width: 768px) {
+      margin: 0;
+      padding: 1rem 0;
+      width: 100%;
+      text-align: center;
+    }
   }
 `;
 
@@ -38,6 +74,7 @@ export const HeaderLink = styled.a`
 
   @media (max-width: 768px) {
     font-size: 12px;
+    color: #fff;
   }
 
   &:hover {
