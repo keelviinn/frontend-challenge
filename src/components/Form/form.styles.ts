@@ -6,6 +6,10 @@ export const FormWrapper = styled.section`
   padding: 4rem 0;
   background: #F5F5F5;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    padding: 4rem 1rem;
+  }
 `;
 
 export const FormCard = styled.div`
@@ -14,6 +18,10 @@ export const FormCard = styled.div`
   background: #FFFFFF;
   padding: 30px 40px; 
   max-width: 630px;
+
+  @media (max-width: 768px) {
+    padding: 30px 20px;
+  }
 `;
 
 export const FormHeader = styled.div`
@@ -26,6 +34,11 @@ export const FormHeader = styled.div`
     line-height: 61px;
     text-align: center;
     font-family: 'Lora';
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+      line-height: 48px;
+    }
   }
 
   p {
@@ -35,6 +48,11 @@ export const FormHeader = styled.div`
     font-size: 18px;
     line-height: 32px;
     text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 `;
 
@@ -46,10 +64,19 @@ export const FormFooter = styled.div`
     font-size: 16px;
     line-height: 100%;
     text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
 
   span {
     font-size: 12px;
+
+    @media (max-width: 768px) {
+      font-size: 10px;
+    }
   }
 `
 

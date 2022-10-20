@@ -11,11 +11,13 @@ type CarouselProps = {
 };
 
 export const Carousel = ({ news }: CarouselProps) => {
+  const { innerWidth: width } = window;
+
   const settings = {
     dots: true,
     infinite: false,
-    slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToShow: width < 768 ? 1 : 3,
+    slidesToScroll: width < 768 ? 1 : 2,
     autoplay: false,
     speed: 1000,
     autoplaySpeed: 2000,

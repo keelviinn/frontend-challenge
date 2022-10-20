@@ -25,6 +25,10 @@ export const FooterContent = styled.div<{ variant?: string }>`
 
     padding: 4rem 6rem;
 
+    @media (max-width: 768px) {
+      padding: 2rem 2rem;
+    }
+
     h2 {
       font-style: normal;
       font-weight: 500;
@@ -34,11 +38,19 @@ export const FooterContent = styled.div<{ variant?: string }>`
 
       display: flex;
       align-items: flex-end;
+
+      @media (max-width: 768px) {
+        font-size: 50px;
+      }
     }
 
     :nth-child(1) {
       button {
         margin-top: 5rem;
+
+        @media (max-width: 768px) {
+          margin-top: 2rem;
+        }
       }
     }
   `}
@@ -54,6 +66,12 @@ export const FooterContentInfo = styled.div`
 
   border-bottom: 1px solid #DBE7E4;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
   :last-child {
     border-bottom: none;
   }
@@ -64,5 +82,9 @@ export const FooterContentInfo = styled.div`
     font-size: 48px;
     line-height: 61px;
     font-family: 'Lora';
+
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
   }
 `;

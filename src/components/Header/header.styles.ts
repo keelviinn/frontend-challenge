@@ -12,6 +12,10 @@ export const HeaderContent = styled.div`
   justify-content: border-box;
   padding: 5rem 20rem;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 5rem 2rem;
+  }
 `;
 
 export const MainTextContent = styled.h1`
@@ -21,6 +25,10 @@ export const MainTextContent = styled.h1`
   color: #000;
   line-height: 100%;
   font-family: 'Lora';
+
+  @media (max-width: 768px) {
+    font-size: 50px;
+  }
 `;
 
 export const SecondaryTextContent = styled.p`
@@ -31,4 +39,8 @@ export const SecondaryTextContent = styled.p`
   text-align: center;
   line-height: 32px;
   padding: 0 2rem;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
