@@ -30,7 +30,7 @@ export const Carousel = ({ news }: CarouselProps) => {
   const settings = {
     dots: true,
     infinite: false,
-    slidesToShow: dimensions.width < 768 ? 1 : 3,
+    slidesToShow: dimensions.width < 768 ? 1 : dimensions.width < 1440 ? 2 : 3,
     slidesToScroll: dimensions.width < 768 ? 1 : 2,
     autoplay: false,
     speed: 1000,
