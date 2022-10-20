@@ -5,6 +5,11 @@ export const HeaderMenuWrapper = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 30px 40px;
+
+  @media (max-width: 768px) {
+    padding: 20px 30px;
+    flex-direction: column;
+  }
 `;
 
 export const HeaderMenu = styled.ul`
@@ -13,6 +18,10 @@ export const HeaderMenu = styled.ul`
   padding: 0;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
 
   li {
     margin: 0 10px;
@@ -27,6 +36,10 @@ export const HeaderLink = styled.a`
   cursor: pointer;
   transition: all 0.3s ease;
 
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+
   &:hover {
     color: green;
   }
@@ -37,4 +50,8 @@ export const CompanyName = styled.h1`
   font-size: 24px;
   font-weight: 700;
   color: #000;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 `;

@@ -13,6 +13,10 @@ export const Button = styled.button<{ variant?: string }>`
     cursor: pointer;
     transition: all 0.3s ease;
 
+    @media (max-width: 768px) {
+      font-size: 10px;  
+    }
+
     &:hover {
       background-color: ${variant === 'primary' ? '#000' : '#A0CDBF'};
       color: #ffff;
