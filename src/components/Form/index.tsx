@@ -23,7 +23,10 @@ export const Form = () => {
             name="control-ref"
             layout="vertical"
             autoComplete="off"
-            onFinish={() => console.log("finish")}
+            onFinish={() => {
+              window.alert("Form submitted!");
+              formRef.current?.resetFields();
+            }}
             className="flex flex-col"
           >
             <Input 
