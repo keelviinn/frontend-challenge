@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import * as S from "./carousel.styles";
 import Slider from "react-slick";
 import { NewsInterface } from "../../pages/About";
@@ -5,23 +6,36 @@ import { NewsInterface } from "../../pages/About";
 import { imgs } from "../../assets/logos";
 import { NameFormat } from "../../util/NameFormat";
 
-
 type CarouselProps = {
   news: NewsInterface[];
 };
 
 export const Carousel = ({ news }: CarouselProps) => {
-  const { innerWidth: width } = window;
+  const [dimensions, setDimensions] = useState({
+    height: window.innerHeight,
+    width: window.innerWidth,
+  });
+
+  useEffect(() => {
+    function handleResize() {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth,
+      });
+    }
+
+    window.addEventListener("resize", handleResize);
+  });
 
   const settings = {
     dots: true,
     infinite: false,
-    slidesToShow: width < 768 ? 1 : 3,
-    slidesToScroll: width < 768 ? 1 : 2,
+    slidesToShow: dimensions.width < 768 ? 1 : 3,
+    slidesToScroll: dimensions.width < 768 ? 1 : 2,
     autoplay: false,
     speed: 1000,
     autoplaySpeed: 2000,
-    cssEase: "linear"
+    cssEase: "linear",
   };
 
   return (
@@ -35,7 +49,10 @@ export const Carousel = ({ news }: CarouselProps) => {
               <S.CarouselCardsContainer key={company}>
                 <S.CarouselCard>
                   <S.CarouselCardTitle>{text}</S.CarouselCardTitle>
-                  <S.CarouselCardImg src={imgs[NameFormat(company)]} alt={company} />
+                  <S.CarouselCardImg
+                    src={imgs[NameFormat(company)]}
+                    alt={company}
+                  />
                 </S.CarouselCard>
               </S.CarouselCardsContainer>
             );
